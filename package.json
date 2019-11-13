@@ -12,6 +12,7 @@
     "classnames": "^2.2.5",
     "dotenv": "^2.0.0",
     "events": "^3.0.0",
+    "idtoken-verifier": "^1.4.1",
     "jwt-decode": "^2.1.0",
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.6",
