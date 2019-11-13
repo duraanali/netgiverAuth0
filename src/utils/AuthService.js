@@ -1,7 +1,6 @@
 import { EventEmitter } from 'events'
 import { isTokenExpired } from './jwtHelper'
-
-import { Auth0LockPasswordless } from 'auth0-lock';
+import Auth0LockPasswordless from 'auth0-lock-passwordless';
 export default class AuthService extends EventEmitter {
   constructor(clientId, domain) {
     super()
@@ -58,7 +57,7 @@ export default class AuthService extends EventEmitter {
     // Here we are setting the autoclose property to false, meaning once a user is authenticated the lock
     // modal will display a message to the user saying they are succesfully logged in but the user will have to
     // close the modal on their own.
-    this.lock.sms({ autoclose: true }, this._doAuthentication.bind(this));
+    this.lock.sms({ autoclose: false }, this._doAuthentication.bind(this));
   }
 
   // The rest of the functions below are helper functions that we borrow from the seed project.
