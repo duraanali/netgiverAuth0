@@ -1,6 +1,7 @@
 import { EventEmitter } from 'events'
 import { isTokenExpired } from './jwtHelper'
-import Auth0LockPasswordless from 'auth0-lock-passwordless';
+
+import { Auth0LockPasswordless } from 'auth0-lock';
 export default class AuthService extends EventEmitter {
   constructor(clientId, domain) {
     super()
