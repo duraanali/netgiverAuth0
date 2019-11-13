@@ -6,6 +6,7 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "auth0-lock": "^11.18.1",
     "auth0-lock-passwordless": "^2.2.3",
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
